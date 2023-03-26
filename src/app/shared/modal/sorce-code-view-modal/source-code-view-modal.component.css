@@ -1,0 +1,23 @@
+.modal-container {
+    margin: 40px 10%;
+}
+
+.content-container {
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #fff;
+    box-shadow: 10px 10px 43px -18px rgba(0, 0, 0, 0.75);
+
+    border-radius: 15px;
+
+    overflow: hidden;
+}
+
+.footer {
+    height: 50px;
+
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+}
