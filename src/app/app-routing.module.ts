@@ -1,10 +1,12 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {ExampleGuard} from "./guards/example.guard";
 import {HomeComponent} from "./components/home/home.component";
 import {TemplateRenderComponent} from "./components/template-render/template-render.component";
 import {DynamicRenderComponent} from "./components/dynamic-render/dynamic-render.component";
+import {EagerLoadingComponent} from "./components/eager-loading/eager-loading.component";
 import {LazyLoadingComponent} from "./components/lazy-loading/lazy-loading.component";
+import {NgIfComponent} from "./components/ng-if/ng-if.component";
+import {NgForComponent} from "./components/ng-for/ng-for.component";
 
 const routes: Routes = [
     {
@@ -22,10 +24,21 @@ const routes: Routes = [
         component: DynamicRenderComponent
     },
     {
-        path: 'lazy-loading',
-        loadChildren: () => import('./components/lazy-loading/lazy-loading.module')
-            .then((m) => m.LazyLoadingModule),
+        path: 'eager-loading',
+        component: EagerLoadingComponent
     },
+    {
+        path: 'lazy-loading',
+        component: LazyLoadingComponent
+    },
+    {
+        path: 'ng-if',
+        component: NgIfComponent
+    },
+    {
+        path: 'ng-for',
+        component: NgForComponent
+    }
 ];
 
 @NgModule({

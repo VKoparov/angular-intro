@@ -12,6 +12,10 @@ import {TemplateRenderModule} from "./components/template-render/template-render
 import {DynamicRenderModule} from "./components/dynamic-render/dynamic-render.module";
 import {LazyLoadingModule} from "./components/lazy-loading/lazy-loading.module";
 import {BaseModule} from "./common/base/base.module";
+import {EagerLoadingModule} from "./components/eager-loading/eager-loading.module";
+import {ExampleModule} from "./common/example/example.module";
+import {NgIfModule} from "./components/ng-if/ng-if.module";
+import {NgForModule} from "./components/ng-for/ng-for.module";
 
 @NgModule({
     declarations: [
@@ -28,7 +32,10 @@ import {BaseModule} from "./common/base/base.module";
         BaseModule,
         TemplateRenderModule,
         DynamicRenderModule,
-        LazyLoadingModule
+        EagerLoadingModule,
+        LazyLoadingModule,
+        NgIfModule,
+        NgForModule
     ],
     bootstrap: [
         AppComponent

@@ -10,6 +10,9 @@ export class HomeComponent {
     links: { name: string, path: string }[] = [
         { name: 'Template Render', path: '/template-render' },
         { name: 'Dynamic Render', path: '/dynamic-render' },
-        { name: 'Lazy Loading', path: '/lazy-loading' }
+        { name: 'Eager Loading', path: '/eager-loading' },
+        { name: 'Lazy Loading', path: '/lazy-loading' },
+        { name: '*ngIf', path: '/ng-if' },
+        { name: '*ngFor', path: '/ng-for' }
     ];
 }
