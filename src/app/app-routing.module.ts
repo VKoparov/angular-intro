@@ -7,6 +7,9 @@ import {EagerLoadingComponent} from "./components/eager-loading/eager-loading.co
 import {LazyLoadingComponent} from "./components/lazy-loading/lazy-loading.component";
 import {NgIfComponent} from "./components/ng-if/ng-if.component";
 import {NgForComponent} from "./components/ng-for/ng-for.component";
+import {
+    ParentChildCommunicationComponent
+} from "./components/parent-child-communication/parent-child-communication.component";
 
 const routes: Routes = [
     {
@@ -38,6 +41,10 @@ const routes: Routes = [
     {
         path: 'ng-for',
         component: NgForComponent
+    },
+    {
+        path: 'parent-child-communication',
+        component: ParentChildCommunicationComponent
     }
 ];
 
