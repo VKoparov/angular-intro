@@ -3,17 +3,17 @@ import { CommonModule } from '@angular/common';
 import { TemplateRenderComponent } from './template-render.component';
 import { TemplateExampleComponent } from './example/template-example.component';
 import {PageRenderModule} from "../../shared/page-render/page-render.module";
-import {ExampleComponent} from "../../common/example/example.component";
+import {ExampleModule} from "../../common/example/example.module";
 
 @NgModule({
   declarations: [
     TemplateRenderComponent,
-    TemplateExampleComponent,
-    ExampleComponent
+    TemplateExampleComponent
   ],
   imports: [
     CommonModule,
-    PageRenderModule
+    PageRenderModule,
+    ExampleModule
   ]
 })
 export class TemplateRenderModule { }

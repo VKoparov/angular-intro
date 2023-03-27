@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { EagerLoadingComponent } from './eager-loading.component';
+import { NgForComponent } from './ng-for.component';
+import {NgForExampleComponent} from "./example/ng-for-example.component";
 import {PageRenderModule} from "../../shared/page-render/page-render.module";
-import {EagerExampleModule} from "./example/eager-example.module";
 
 @NgModule({
   declarations: [
-    EagerLoadingComponent,
+    NgForComponent,
+    NgForExampleComponent
   ],
   imports: [
     CommonModule,
-    EagerExampleModule,
     PageRenderModule
   ]
 })
-export class EagerLoadingModule { }
+export class NgForModule { }

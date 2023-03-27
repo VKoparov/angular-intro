@@ -1,0 +1,15 @@
+.body {
+    display: grid;
+    gap: 10px;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+
+    margin: auto;
+}
+
+.btn {
+    margin: auto;
+}

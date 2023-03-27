@@ -17,6 +17,21 @@ export class LazyLoadingComponent extends BaseComponent {
             LazyExampleComponent,
             [
                 {
+                    location: 'components/lazy-loading',
+                    name: 'lazy-loading-routing.module.ts',
+                    discriminatorType: 'const'
+                },
+                {
+                    location: 'components/lazy-loading/example',
+                    name: 'lazy-example-routing.module.ts',
+                    discriminatorType: 'const'
+                },
+                {
+                    location: 'components/lazy-loading/example',
+                    name: 'lazy-example.module.ts',
+                    discriminatorType: '@NgModule'
+                },
+                {
                     location: 'components/lazy-loading/example',
                     name: 'lazy-example.component.ts',
                     discriminatorType: '@Component'

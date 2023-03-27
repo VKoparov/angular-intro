@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {EagerExampleComponent} from "./eager-example.component";
 
 const routes: Routes = [
   {
-    path: 'example',
-    loadChildren: () => import('./example/lazy-example.module')
-        .then((m) => m.LazyExampleModule)
+    path: '',
+    component: EagerExampleComponent
   }
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class LazyLoadingRoutingModule {}
+export class EagerExampleRoutingModule {}
