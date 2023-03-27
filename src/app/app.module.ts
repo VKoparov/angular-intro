@@ -16,6 +16,9 @@ import {EagerLoadingModule} from "./components/eager-loading/eager-loading.modul
 import {ExampleModule} from "./common/example/example.module";
 import {NgIfModule} from "./components/ng-if/ng-if.module";
 import {NgForModule} from "./components/ng-for/ng-for.module";
+import {
+    ParentChildCommunicationModule
+} from "./components/parent-child-communication/parent-child-communication.module";
 
 @NgModule({
     declarations: [
@@ -35,7 +38,8 @@ import {NgForModule} from "./components/ng-for/ng-for.module";
         EagerLoadingModule,
         LazyLoadingModule,
         NgIfModule,
-        NgForModule
+        NgForModule,
+        ParentChildCommunicationModule
     ],
     bootstrap: [
         AppComponent

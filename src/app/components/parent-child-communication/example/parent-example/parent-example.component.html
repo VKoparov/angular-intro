@@ -1,0 +1,10 @@
+<div class="body">
+    <div class="partition">
+        <app-child-example [gifUrl]="gifUrl"></app-child-example>
+        <div>Emit to Child</div>
+    </div>
+    <div class="partition">
+        <app-child-example (event)="handleChildEvent($event)"></app-child-example>
+        <div>Emit to Parent</div>
+    </div>
+</div>

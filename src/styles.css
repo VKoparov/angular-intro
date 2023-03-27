@@ -105,7 +105,7 @@ td.hljs-ln-code {
 @media screen and (max-width: 60em) {
 
     .mat-mdc-tab-body-wrapper {
-        max-height: 300px;
+        max-height: 360px;
     }
 
     code::-webkit-scrollbar {

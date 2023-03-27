@@ -13,6 +13,7 @@ export class HomeComponent {
         { name: 'Eager Loading', path: '/eager-loading' },
         { name: 'Lazy Loading', path: '/lazy-loading' },
         { name: '*ngIf', path: '/ng-if' },
-        { name: '*ngFor', path: '/ng-for' }
+        { name: '*ngFor', path: '/ng-for' },
+        { name: 'Parent Child Communication', path: '/parent-child-communication' }
     ];
 }
