@@ -2,7 +2,7 @@
     <div class="action-button">
         <app-back-button></app-back-button>
     </div>
-    <div class="action-button" (click)="handleClickAction()">
+    <div class="action-button" *ngIf="shouldHaveActionButton" (click)="handleClickAction()">
         <app-action-button [buttonText]="actionButtonText"></app-action-button>
     </div>
 </div>

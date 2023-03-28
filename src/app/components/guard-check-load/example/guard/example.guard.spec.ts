@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { ExampleGuard } from './example.guard';
-import {ExampleService} from "../../../../services/example.service";
+import {ObservablesService} from "../../../service-observables/example/service/observables.service";
 
 describe('ExampleGuard', () => {
   let guard: ExampleGuard;
@@ -10,7 +10,7 @@ describe('ExampleGuard', () => {
     TestBed.configureTestingModule({
       providers: [
         {
-          provide: ExampleService,
+          provide: ObservablesService,
           useValue: {}
         }
       ]

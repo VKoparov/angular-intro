@@ -1,0 +1,8 @@
+<div class="body">
+    <div *ngIf="isClicked" class="pokemon-info">
+        <div class="name"><b>Name:</b> {{ pokemon.name }}</div>
+        <div class="ability"><b>Ability:</b> {{ pokemon.ability }}</div>
+        <div class="type"><b>Type:</b> {{ pokemon.type }}</div>
+    </div>
+    <app-action-button class="btn" (click)="handleClickEvent()" [buttonText]="actionButtonText"></app-action-button>
+</div>

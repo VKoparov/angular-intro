@@ -108,6 +108,10 @@ td.hljs-ln-code {
         max-height: 360px;
     }
 
+    code {
+        font-size: 12px;
+    }
+
     code::-webkit-scrollbar {
         display: none;
     }

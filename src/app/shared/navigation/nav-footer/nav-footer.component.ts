@@ -9,6 +9,8 @@ export class NavFooterComponent {
 
   @Input() actionButtonText!: string;
 
+  @Input() shouldHaveActionButton: boolean = true;
+
   @Output() emitAction: EventEmitter<void> = new EventEmitter();
 
   handleClickAction() {

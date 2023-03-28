@@ -1,0 +1,15 @@
+.body {
+    display: grid;
+    gap: 30px;
+}
+
+.pokemon-info {
+    border: solid lightcoral 3px;
+    border-radius: 15px;
+
+    padding: 20px;
+}
+
+.btn {
+    margin: auto;
+}

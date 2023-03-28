@@ -23,6 +23,9 @@ import {GuardCheckLoadModule} from "./components/guard-check-load/guard-check-lo
 import {GuardExampleModule} from "./components/guard-check-load/example/guard-example.module";
 import {PipeTransformerModule} from "./components/pipe-transformer/pipe-transformer.module";
 import {NavigationModule} from "./shared/navigation/navigation.module";
+import {ServiceObservablesModule} from "./components/service-observables/service-observables.module";
+import {ServicePromiseModule} from "./components/service-promise/service-promise.module";
+import {ServicePipesModule} from "./components/service-pipes/service-pipes.module";
 
 @NgModule({
     declarations: [
@@ -47,7 +50,10 @@ import {NavigationModule} from "./shared/navigation/navigation.module";
         GuardCheckLoadModule,
         GuardExampleModule,
         PipeTransformerModule,
-        NavigationModule
+        NavigationModule,
+        ServiceObservablesModule,
+        ServicePromiseModule,
+        ServicePipesModule
     ],
     bootstrap: [
         AppComponent

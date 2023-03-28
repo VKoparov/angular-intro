@@ -1,10 +1,10 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ExampleService } from './example.service';
+import { PokemonService } from './pokemon.service';
 import {HttpClient} from "@angular/common/http";
 
 describe('ExampleService', () => {
-  let service: ExampleService;
+  let service: PokemonService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -15,7 +15,7 @@ describe('ExampleService', () => {
         }
       ]
     });
-    service = TestBed.inject(ExampleService);
+    service = TestBed.inject(PokemonService);
   });
 
   it('should be created', () => {
