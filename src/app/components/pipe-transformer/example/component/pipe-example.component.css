@@ -1,0 +1,10 @@
+.body {
+    display: grid;
+    gap: 30px;
+
+    text-align: center;
+}
+
+.btn {
+    margin: auto;
+}

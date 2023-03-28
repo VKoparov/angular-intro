@@ -1,6 +1,12 @@
-.btn-container {
+.home-container {
     height: 100%;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-container {
     display: flex;
     margin: auto 30px;
 }

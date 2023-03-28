@@ -1,0 +1,5 @@
+<div class="body">
+    <div *ngIf="!isApplied" class="text">{{ text }}</div>
+    <div *ngIf="isApplied" class="text">{{ text | formatText: 'example' : 'transformed' }}</div>
+    <app-action-button class="btn" (click)="handleClickEvent()" [buttonText]="actionButtonText"></app-action-button>
+</div>

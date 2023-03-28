@@ -1,8 +1,11 @@
-<div class="btn-container">
-    <div class="btn-group">
-        <button *ngFor="let link of links" [routerLink]="[link.path]"
-                class="btn">
-            {{ link.name }}
-        </button>
+<div class="home-container">
+    <app-nav-top [header]="header"></app-nav-top>
+    <div class="btn-container">
+        <div class="btn-group">
+            <button *ngFor="let link of links" [routerLink]="[link.path]"
+                    class="btn">
+                {{ link.name }}
+            </button>
+        </div>
     </div>
 </div>

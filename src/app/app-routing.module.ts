@@ -11,6 +11,7 @@ import {
     ParentChildCommunicationComponent
 } from "./components/parent-child-communication/parent-child-communication.component";
 import {GuardCheckLoadComponent} from "./components/guard-check-load/guard-check-load.component";
+import {PipeTransformerComponent} from "./components/pipe-transformer/pipe-transformer.component";
 
 const routes: Routes = [
     {
@@ -50,6 +51,10 @@ const routes: Routes = [
     {
         path: 'guard',
         component: GuardCheckLoadComponent
+    },
+    {
+        path: 'pipe',
+        component: PipeTransformerComponent
     }
 ];
 
