@@ -11,7 +11,7 @@ export class ExampleGuard implements CanActivate {
         return new Promise((resolve) => {
             setTimeout(() => {
                 resolve(true);
-            }, 1000);
+            }, 1500);
         });
     }
 }

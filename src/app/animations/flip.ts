@@ -3,7 +3,7 @@ import {FlipAnimationState} from "../models/flip-animation-state";
 
 export const flip = trigger("flip", [
     state(
-        FlipAnimationState.PREVIEW,
+        FlipAnimationState.CODE,
         style({
             transform: "none"
         })
@@ -14,6 +14,6 @@ export const flip = trigger("flip", [
             transform: "rotateY(180deg)"
         })
     ),
-    transition(`${FlipAnimationState.PREVIEW} => ${FlipAnimationState.DEMO}`, [animate("400ms")]),
-    transition(`${FlipAnimationState.DEMO} => ${FlipAnimationState.PREVIEW}`, [animate("400ms")])
+    transition(`${FlipAnimationState.CODE} => ${FlipAnimationState.DEMO}`, [animate("400ms")]),
+    transition(`${FlipAnimationState.DEMO} => ${FlipAnimationState.CODE}`, [animate("400ms")])
 ])

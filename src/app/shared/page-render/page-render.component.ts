@@ -13,17 +13,17 @@ export class PageRenderComponent {
 
     @Input() data!: SourceCodeView;
 
-    state: FlipAnimationState = FlipAnimationState.PREVIEW;
+    state: FlipAnimationState = FlipAnimationState.CODE;
 
     actionButtonText: string = 'Demo';
 
     cardClicked() {
-        if (this.state === FlipAnimationState.PREVIEW) {
+        if (this.state === FlipAnimationState.CODE) {
             this.state = FlipAnimationState.DEMO;
-            this.actionButtonText = 'Preview'
+            this.actionButtonText = 'Code';
         } else {
-            this.state = FlipAnimationState.PREVIEW;
-            this.actionButtonText = 'Demo'
+            this.state = FlipAnimationState.CODE;
+            this.actionButtonText = 'Demo';
         }
     }
 }

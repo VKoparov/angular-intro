@@ -1,4 +1,4 @@
 export enum FlipAnimationState {
-    PREVIEW = 'preview',
+    CODE = 'code',
     DEMO = 'demo'
 }
