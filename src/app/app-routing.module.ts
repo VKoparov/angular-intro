@@ -12,6 +12,9 @@ import {
 } from "./components/parent-child-communication/parent-child-communication.component";
 import {GuardCheckLoadComponent} from "./components/guard-check-load/guard-check-load.component";
 import {PipeTransformerComponent} from "./components/pipe-transformer/pipe-transformer.component";
+import {ServiceObservablesComponent} from "./components/service-observables/service-observables.component";
+import {ServicePromiseComponent} from "./components/service-promise/service-promise.component";
+import {ServicePipesComponent} from "./components/service-pipes/service-pipes.component";
 
 const routes: Routes = [
     {
@@ -55,6 +58,18 @@ const routes: Routes = [
     {
         path: 'pipe',
         component: PipeTransformerComponent
+    },
+    {
+        path: 'observables',
+        component: ServiceObservablesComponent
+    },
+    {
+        path: 'promises',
+        component: ServicePromiseComponent
+    },
+    {
+        path: 'rxjs-pipes',
+        component: ServicePipesComponent
     }
 ];
 
