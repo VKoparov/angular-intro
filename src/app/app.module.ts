@@ -21,6 +21,8 @@ import {
 } from "./components/parent-child-communication/parent-child-communication.module";
 import {GuardCheckLoadModule} from "./components/guard-check-load/guard-check-load.module";
 import {GuardExampleModule} from "./components/guard-check-load/example/guard-example.module";
+import {PipeTransformerModule} from "./components/pipe-transformer/pipe-transformer.module";
+import {NavigationModule} from "./shared/navigation/navigation.module";
 
 @NgModule({
     declarations: [
@@ -43,7 +45,9 @@ import {GuardExampleModule} from "./components/guard-check-load/example/guard-ex
         NgForModule,
         ParentChildCommunicationModule,
         GuardCheckLoadModule,
-        GuardExampleModule
+        GuardExampleModule,
+        PipeTransformerModule,
+        NavigationModule
     ],
     bootstrap: [
         AppComponent

@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import {formatTextWithPlaceholders} from "../utils/string-util";
+import {formatTextWithPlaceholders} from "../../../../utils/string-util";
 
 @Pipe({
   name: 'formatText',
