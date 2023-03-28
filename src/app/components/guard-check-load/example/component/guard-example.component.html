@@ -1,0 +1,4 @@
+<div class="body">
+    <iframe *ngIf="shouldShow" src="http://localhost:4200/guard-example/example"></iframe>
+    <app-action-button class="btn" (click)="handleClickEvent()" [buttonText]="actionButtonText"></app-action-button>
+</div>

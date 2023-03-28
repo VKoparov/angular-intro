@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 
 import { ExampleGuard } from './example.guard';
-import {ExampleService} from "../services/example.service";
+import {ExampleService} from "../../../../services/example.service";
 
 describe('ExampleGuard', () => {
   let guard: ExampleGuard;

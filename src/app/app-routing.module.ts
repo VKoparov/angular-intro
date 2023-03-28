@@ -10,6 +10,7 @@ import {NgForComponent} from "./components/ng-for/ng-for.component";
 import {
     ParentChildCommunicationComponent
 } from "./components/parent-child-communication/parent-child-communication.component";
+import {GuardCheckLoadComponent} from "./components/guard-check-load/guard-check-load.component";
 
 const routes: Routes = [
     {
@@ -45,6 +46,10 @@ const routes: Routes = [
     {
         path: 'parent-child-communication',
         component: ParentChildCommunicationComponent
+    },
+    {
+        path: 'guard',
+        component: GuardCheckLoadComponent
     }
 ];
 

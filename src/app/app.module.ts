@@ -19,6 +19,8 @@ import {NgForModule} from "./components/ng-for/ng-for.module";
 import {
     ParentChildCommunicationModule
 } from "./components/parent-child-communication/parent-child-communication.module";
+import {GuardCheckLoadModule} from "./components/guard-check-load/guard-check-load.module";
+import {GuardExampleModule} from "./components/guard-check-load/example/guard-example.module";
 
 @NgModule({
     declarations: [
@@ -39,7 +41,9 @@ import {
         LazyLoadingModule,
         NgIfModule,
         NgForModule,
-        ParentChildCommunicationModule
+        ParentChildCommunicationModule,
+        GuardCheckLoadModule,
+        GuardExampleModule
     ],
     bootstrap: [
         AppComponent
