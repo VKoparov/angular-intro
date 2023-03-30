@@ -14,7 +14,6 @@ export class GuardCheckLoadComponent extends BaseComponent {
         super(
             httpClient,
             'Guard',
-            GuardExampleComponent,
             [
                 {
                     location: 'components/guard-check-load/example/guard',
@@ -31,7 +30,8 @@ export class GuardCheckLoadComponent extends BaseComponent {
                     name: 'guard-example.module.ts',
                     discriminatorType: '@NgModule'
                 }
-            ]
+            ],
+            GuardExampleComponent
         );
     }
 }

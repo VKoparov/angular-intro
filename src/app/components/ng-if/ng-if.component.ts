@@ -14,7 +14,6 @@ export class NgIfComponent extends BaseComponent {
         super(
             httpClient,
             'Lazy Loading',
-            NgIfExampleComponent,
             [
                 {
                     location: 'components/ng-if/example',
@@ -26,7 +25,8 @@ export class NgIfComponent extends BaseComponent {
                     name: 'ng-if-example.component.html',
                     discriminatorType: '<'
                 }
-            ]
+            ],
+            NgIfExampleComponent
         );
     }
 }

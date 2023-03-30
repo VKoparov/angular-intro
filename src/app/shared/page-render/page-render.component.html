@@ -4,5 +4,5 @@
         <app-source-code-view-modal *ngIf="state.toString() === 'code'" [data]="data.sourceCodeData"></app-source-code-view-modal>
         <app-demo-code-view-modal *ngIf="state.toString() === 'demo'" [demoComponent]="data.component"></app-demo-code-view-modal>
     </div>
-    <app-nav-footer [actionButtonText]="actionButtonText" (emitAction)="cardClicked()"></app-nav-footer>
+    <app-nav-footer [actionButtonText]="actionButtonText" [shouldHaveActionButton]="!!this.data.component" (emitAction)="cardClicked()"></app-nav-footer>
 </div>

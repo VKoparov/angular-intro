@@ -14,7 +14,6 @@ export class PipeTransformerComponent extends BaseComponent {
     super(
         httpClient,
         'Pipe',
-        PipeExampleComponent,
         [
           {
             location: 'components/pipe-transformer/example/pipe',
@@ -31,7 +30,8 @@ export class PipeTransformerComponent extends BaseComponent {
             name: 'pipe-example.component.html',
             discriminatorType: '<'
           }
-        ]
+        ],
+        PipeExampleComponent
     );
   }
 }

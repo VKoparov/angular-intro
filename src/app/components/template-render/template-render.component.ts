@@ -14,7 +14,6 @@ export class TemplateRenderComponent extends BaseComponent {
         super(
             httpClient,
             'Template Render',
-            TemplateExampleComponent,
             [
                 {
                     location: 'components/template-render/example',
@@ -26,7 +25,8 @@ export class TemplateRenderComponent extends BaseComponent {
                     name: 'template-example.component.html',
                     discriminatorType: '<'
                 }
-            ]
+            ],
+            TemplateExampleComponent
         );
     }
 }

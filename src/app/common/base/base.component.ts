@@ -16,8 +16,8 @@ export class BaseComponent {
   constructor(
       protected httpClient: HttpClient,
       @Inject(String) header: string,
-      @Inject({}) component: any,
-      @Inject({}) files: { location: string, name: string, discriminatorType: string }[]
+      @Inject({}) files: { location: string, name: string, discriminatorType: string }[],
+      @Inject({}) component?: any
   ) {
     this.setHeader(header);
     this.setSourceCodeView(component, files);

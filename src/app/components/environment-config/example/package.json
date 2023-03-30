@@ -1,0 +1,9 @@
+{
+  "name": "angular-project",
+  "version": "1.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve --configuration production",
+    "dev": "ng serve --configuration development"
+  }
+}

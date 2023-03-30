@@ -13,9 +13,9 @@ export class PageRenderComponent {
 
     @Input() data!: SourceCodeView;
 
-    state: FlipAnimationState = FlipAnimationState.CODE;
-
     actionButtonText: string = 'Demo';
+
+    state: FlipAnimationState = FlipAnimationState.CODE;
 
     cardClicked() {
         if (this.state === FlipAnimationState.CODE) {

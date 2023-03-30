@@ -14,7 +14,6 @@ export class ServiceObservablesComponent extends BaseComponent {
     super(
         httpClient,
         'Observables',
-        ExampleComponent,
         [
           {
             location: 'services',
@@ -31,7 +30,8 @@ export class ServiceObservablesComponent extends BaseComponent {
             name: 'example.component.html',
             discriminatorType: '<'
           }
-        ]
+        ],
+        ExampleComponent
     );
   }
 }

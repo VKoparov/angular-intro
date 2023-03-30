@@ -23,6 +23,7 @@ export class HomeComponent {
         { name: 'Observables', path: '/observables' },
         { name: 'Promises', path: '/promises' },
         { name: 'RxJS Pipes', path: '/rxjs-pipes' },
-        { name: 'Property Binding', path: '/property-binding' }
+        { name: 'Property Binding', path: '/property-binding' },
+        { name: 'Environment', path: '/environment' }
     ];
 }
