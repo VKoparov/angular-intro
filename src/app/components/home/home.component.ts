@@ -24,6 +24,7 @@ export class HomeComponent {
         { name: 'Promises', path: '/promises' },
         { name: 'RxJS Pipes', path: '/rxjs-pipes' },
         { name: 'Property Binding', path: '/property-binding' },
-        { name: 'Environment', path: '/environment' }
+        { name: 'Environment', path: '/environment' },
+        { name: 'Component Inheritance', path: '/component-inheritance' }
     ];
 }
