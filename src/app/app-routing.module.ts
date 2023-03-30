@@ -16,6 +16,7 @@ import {ServiceObservablesComponent} from "./components/service-observables/serv
 import {ServicePromiseComponent} from "./components/service-promise/service-promise.component";
 import {ServicePipesComponent} from "./components/service-pipes/service-pipes.component";
 import {DirectiveEventComponent} from "./components/directive-event/directive-event.component";
+import {PropertyBindingComponent} from "./components/property-binding/property-binding.component";
 
 const routes: Routes = [
     {
@@ -75,6 +76,10 @@ const routes: Routes = [
     {
         path: 'directive',
         component: DirectiveEventComponent
+    },
+    {
+        path: 'property-binding',
+        component: PropertyBindingComponent
     }
 ];
 

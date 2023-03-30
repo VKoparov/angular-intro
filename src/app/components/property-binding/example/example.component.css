@@ -1,0 +1,33 @@
+.body {
+    display: grid;
+    gap: 30px;
+}
+
+.text {
+    height: 100px;
+    width: 200px;
+
+    border: solid lightcoral 3px;
+    border-radius: 15px;
+
+    margin: auto;
+    padding: 20px;
+
+    word-wrap: break-word;
+
+    overflow-y: auto;
+}
+
+.input-field {
+    width: 200px;
+
+    border: solid 3px #5643CC;
+    border-radius: 15px;
+
+    margin: auto;
+    padding: 10px 15px;
+}
+
+.btn {
+    margin: auto;
+}
