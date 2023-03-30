@@ -14,7 +14,6 @@ export class PropertyBindingComponent extends BaseComponent {
     super(
         httpClient,
         'Property Binding',
-        ExampleComponent,
         [
           {
             location: 'components/property-binding/example',
@@ -26,7 +25,8 @@ export class PropertyBindingComponent extends BaseComponent {
             name: 'example.component.html',
             discriminatorType: '<'
           }
-        ]
+        ],
+        ExampleComponent
     );
   }
 }

@@ -14,7 +14,6 @@ export class LazyLoadingComponent extends BaseComponent {
         super(
             httpClient,
             'Lazy Loading',
-            LazyExampleComponent,
             [
                 {
                     location: 'components/lazy-loading',
@@ -41,7 +40,8 @@ export class LazyLoadingComponent extends BaseComponent {
                     name: 'lazy-example.component.html',
                     discriminatorType: '<'
                 }
-            ]
+            ],
+            LazyExampleComponent
         );
     }
 }

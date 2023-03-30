@@ -14,7 +14,6 @@ export class DynamicRenderComponent extends BaseComponent {
         super(
             httpClient,
             'Dynamic Render',
-            DynamicExampleComponent,
             [
                 {
                     location: 'components/dynamic-render/example',
@@ -31,7 +30,8 @@ export class DynamicRenderComponent extends BaseComponent {
                     name: 'dynamic-component.directive.ts',
                     discriminatorType: '@Directive'
                 }
-            ]
+            ],
+            DynamicExampleComponent
         );
     }
 }

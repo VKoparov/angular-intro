@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {BaseComponent} from "../../common/base/base.component";
 import {HttpClient} from "@angular/common/http";
-import {LazyExampleComponent} from "../lazy-loading/example/lazy-example.component";
 import {ParentExampleComponent} from "./example/parent-example/parent-example.component";
 
 @Component({
@@ -15,7 +14,6 @@ export class ParentChildCommunicationComponent extends BaseComponent {
     super(
         httpClient,
         'Lazy Loading',
-        ParentExampleComponent,
         [
           {
             location: 'components/parent-child-communication/example/parent-example',
@@ -37,7 +35,8 @@ export class ParentChildCommunicationComponent extends BaseComponent {
             name: 'child-example.component.html',
             discriminatorType: '<'
           }
-        ]
+        ],
+        ParentExampleComponent
     );
   }
 }

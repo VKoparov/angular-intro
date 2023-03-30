@@ -14,7 +14,6 @@ export class DirectiveEventComponent extends BaseComponent {
     super(
         httpClient,
         'Directive',
-        DirectiveExampleComponent,
         [
           {
             location: 'components/directive-event/example/directive',
@@ -31,7 +30,8 @@ export class DirectiveEventComponent extends BaseComponent {
             name: 'directive-example.component.html',
             discriminatorType: '<'
           }
-        ]
+        ],
+        DirectiveExampleComponent
     );
   }
 }

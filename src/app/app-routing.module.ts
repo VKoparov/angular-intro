@@ -17,6 +17,7 @@ import {ServicePromiseComponent} from "./components/service-promise/service-prom
 import {ServicePipesComponent} from "./components/service-pipes/service-pipes.component";
 import {DirectiveEventComponent} from "./components/directive-event/directive-event.component";
 import {PropertyBindingComponent} from "./components/property-binding/property-binding.component";
+import {EnvironmentConfigComponent} from "./components/environment-config/environment-config.component";
 
 const routes: Routes = [
     {
@@ -80,6 +81,10 @@ const routes: Routes = [
     {
         path: 'property-binding',
         component: PropertyBindingComponent
+    },
+    {
+        path: 'environment',
+        component: EnvironmentConfigComponent
     }
 ];
 

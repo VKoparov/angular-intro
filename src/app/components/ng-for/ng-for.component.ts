@@ -15,7 +15,6 @@ export class NgForComponent extends BaseComponent {
     super(
         httpClient,
         'Lazy Loading',
-        NgForExampleComponent,
         [
           {
             location: 'components/ng-for/example',
@@ -27,7 +26,8 @@ export class NgForComponent extends BaseComponent {
             name: 'ng-for-example.component.html',
             discriminatorType: '<'
           }
-        ]
+        ],
+        NgForExampleComponent
     );
   }
 }

@@ -28,6 +28,7 @@ import {ServicePromiseModule} from "./components/service-promise/service-promise
 import {ServicePipesModule} from "./components/service-pipes/service-pipes.module";
 import {DirectiveEventModule} from "./components/directive-event/directive-event.module";
 import {PropertyBindingModule} from "./components/property-binding/property-binding.module";
+import {EnvironmentConfigModule} from "./components/environment-config/environment-config.module";
 
 @NgModule({
     declarations: [
@@ -57,7 +58,8 @@ import {PropertyBindingModule} from "./components/property-binding/property-bind
         ServicePromiseModule,
         ServicePipesModule,
         DirectiveEventModule,
-        PropertyBindingModule
+        PropertyBindingModule,
+        EnvironmentConfigModule
     ],
     bootstrap: [
         AppComponent

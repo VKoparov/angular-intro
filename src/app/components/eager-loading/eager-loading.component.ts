@@ -14,7 +14,6 @@ export class EagerLoadingComponent extends BaseComponent {
     super(
         httpClient,
         'Eager Loading',
-        EagerExampleComponent,
         [
           {
             location: 'components/eager-loading/example',
@@ -31,7 +30,8 @@ export class EagerLoadingComponent extends BaseComponent {
             name: 'eager-example.component.html',
             discriminatorType: '<'
           }
-        ]
+        ],
+        EagerExampleComponent
     );
   }
 }
