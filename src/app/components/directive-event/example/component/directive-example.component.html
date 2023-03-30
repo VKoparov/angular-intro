@@ -1,0 +1,8 @@
+<div class="body">
+    <div class="list-container" scrollSpy (scrollStart)="onScrollStart()" (scrollEnd)="onScrollEnd()">
+        <div *ngFor="let element of elements" class="list-element">
+            {{ 'List element'.concat(' ').concat(element.toString()) }}
+        </div>
+    </div>
+    <div class="message">{{ scrollMessage }}</div>
+</div>

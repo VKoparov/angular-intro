@@ -1,0 +1,24 @@
+.body {
+    display: grid;
+    gap: 10px;
+
+    text-align: center;
+}
+
+.list-container {
+    height: 100px;
+
+    display: grid;
+    gap: 10px;
+
+    border: solid lightcoral 3px;
+    border-radius: 15px;
+
+    padding: 20px;
+
+    overflow: auto;
+}
+
+.message {
+    font-weight: bold;
+}

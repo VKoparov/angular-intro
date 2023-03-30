@@ -19,6 +19,7 @@ export class HomeComponent {
         { name: 'Parent Child Communication', path: '/parent-child-communication' },
         { name: 'Guard', path: '/guard' },
         { name: 'Pipe', path: '/pipe' },
+        { name: 'Directive', path: '/directive' },
         { name: 'Observables', path: '/observables' },
         { name: 'Promises', path: '/promises' },
         { name: 'RxJS Pipes', path: '/rxjs-pipes' }
