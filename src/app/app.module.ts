@@ -26,6 +26,7 @@ import {NavigationModule} from "./shared/navigation/navigation.module";
 import {ServiceObservablesModule} from "./components/service-observables/service-observables.module";
 import {ServicePromiseModule} from "./components/service-promise/service-promise.module";
 import {ServicePipesModule} from "./components/service-pipes/service-pipes.module";
+import {DirectiveEventModule} from "./components/directive-event/directive-event.module";
 
 @NgModule({
     declarations: [
@@ -53,7 +54,8 @@ import {ServicePipesModule} from "./components/service-pipes/service-pipes.modul
         NavigationModule,
         ServiceObservablesModule,
         ServicePromiseModule,
-        ServicePipesModule
+        ServicePipesModule,
+        DirectiveEventModule
     ],
     bootstrap: [
         AppComponent

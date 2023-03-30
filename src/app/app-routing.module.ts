@@ -15,6 +15,7 @@ import {PipeTransformerComponent} from "./components/pipe-transformer/pipe-trans
 import {ServiceObservablesComponent} from "./components/service-observables/service-observables.component";
 import {ServicePromiseComponent} from "./components/service-promise/service-promise.component";
 import {ServicePipesComponent} from "./components/service-pipes/service-pipes.component";
+import {DirectiveEventComponent} from "./components/directive-event/directive-event.component";
 
 const routes: Routes = [
     {
@@ -70,6 +71,10 @@ const routes: Routes = [
     {
         path: 'rxjs-pipes',
         component: ServicePipesComponent
+    },
+    {
+        path: 'directive',
+        component: DirectiveEventComponent
     }
 ];
 
