@@ -1,0 +1,4 @@
+<div class="body">
+    <div class="text" #textScroll [scrollTop]="textScroll.scrollHeight">{{ inputValue }}</div>
+    <input class="input-field" type="text" placeholder="Enter text" [(ngModel)]="inputValue">
+</div>

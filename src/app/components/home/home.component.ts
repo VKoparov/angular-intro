@@ -22,6 +22,7 @@ export class HomeComponent {
         { name: 'Directive', path: '/directive' },
         { name: 'Observables', path: '/observables' },
         { name: 'Promises', path: '/promises' },
-        { name: 'RxJS Pipes', path: '/rxjs-pipes' }
+        { name: 'RxJS Pipes', path: '/rxjs-pipes' },
+        { name: 'Property Binding', path: '/property-binding' }
     ];
 }
