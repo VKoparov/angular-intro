@@ -1,6 +1,6 @@
 import {Component, ComponentFactoryResolver, ComponentRef, OnInit, ViewChild} from '@angular/core';
 import {DynamicComponentDirective} from "../../../directives/dynamic-component.directive";
-import {TemplateExampleComponent} from "../../template-render/example/template-example.component";
+import {ExampleComponent} from "../../../common/example/example.component";
 
 @Component({
   selector: 'app-dynamic-example',
@@ -9,11 +9,11 @@ import {TemplateExampleComponent} from "../../template-render/example/template-e
 })
 export class DynamicExampleComponent implements OnInit {
 
-  components: any[] = [TemplateExampleComponent];
+  components: any[] = [ExampleComponent];
 
   @ViewChild(DynamicComponentDirective, {static: true}) templateDirective!: DynamicComponentDirective;
 
-  componentRef!: ComponentRef<TemplateExampleComponent>;
+  componentRef!: ComponentRef<ExampleComponent>;
 
   constructor(private componentFactoryResolver: ComponentFactoryResolver) {
   }
@@ -29,5 +29,6 @@ export class DynamicExampleComponent implements OnInit {
     viewContainerRef.clear();
 
     this.componentRef = viewContainerRef.createComponent(componentInstance as never);
+    this.componentRef.instance.header = 'Example Header';
   }
 }

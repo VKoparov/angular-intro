@@ -18,6 +18,7 @@ import {ServicePipesComponent} from "./components/service-pipes/service-pipes.co
 import {DirectiveEventComponent} from "./components/directive-event/directive-event.component";
 import {PropertyBindingComponent} from "./components/property-binding/property-binding.component";
 import {EnvironmentConfigComponent} from "./components/environment-config/environment-config.component";
+import {ComponentInheritanceComponent} from "./components/component-inheritance/component-inheritance.component";
 
 const routes: Routes = [
     {
@@ -85,6 +86,10 @@ const routes: Routes = [
     {
         path: 'environment',
         component: EnvironmentConfigComponent
+    },
+    {
+        path: 'component-inheritance',
+        component: ComponentInheritanceComponent
     }
 ];
 

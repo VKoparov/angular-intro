@@ -1,0 +1,7 @@
+.frame-container {
+    width: 200px;
+    height: 280px;
+
+    border: solid 3px;
+    border-radius: 15px;
+}
