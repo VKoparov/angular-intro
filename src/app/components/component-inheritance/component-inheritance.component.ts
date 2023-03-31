@@ -14,7 +14,7 @@ export class ComponentInheritanceComponent extends BaseComponent {
   constructor(public override httpClient: HttpClient) {
     super(
         httpClient,
-        'Lazy Loading',
+        'Component Inheritance',
         [
           {
             location: 'components/component-inheritance/example/component/frame',

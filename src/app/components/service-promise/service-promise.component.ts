@@ -13,7 +13,7 @@ export class ServicePromiseComponent extends BaseComponent {
   constructor(public override httpClient: HttpClient) {
     super(
         httpClient,
-        'Observables',
+        'Promises',
         [
           {
             location: 'services',
