@@ -14,7 +14,7 @@ export class NgForComponent extends BaseComponent {
   constructor(public override httpClient: HttpClient) {
     super(
         httpClient,
-        'Lazy Loading',
+        'Ng For',
         [
           {
             location: 'components/ng-for/example',
