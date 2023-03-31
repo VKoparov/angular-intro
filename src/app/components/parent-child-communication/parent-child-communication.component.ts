@@ -13,7 +13,7 @@ export class ParentChildCommunicationComponent extends BaseComponent {
   constructor(public override httpClient: HttpClient) {
     super(
         httpClient,
-        'Lazy Loading',
+        'Parent Child Communication',
         [
           {
             location: 'components/parent-child-communication/example/parent-example',

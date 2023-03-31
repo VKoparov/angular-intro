@@ -13,7 +13,7 @@ export class NgIfComponent extends BaseComponent {
     constructor(public override httpClient: HttpClient) {
         super(
             httpClient,
-            'Lazy Loading',
+            'Ng If',
             [
                 {
                     location: 'components/ng-if/example',

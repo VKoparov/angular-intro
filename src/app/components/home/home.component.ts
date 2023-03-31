@@ -16,7 +16,7 @@ export class HomeComponent {
         { name: 'Lazy Loading', path: '/lazy-loading' },
         { name: '*ngIf', path: '/ng-if' },
         { name: '*ngFor', path: '/ng-for' },
-        { name: 'Parent Child Communication', path: '/parent-child-communication' },
+        { name: 'Parent/Child Communication', path: '/parent-child-communication' },
         { name: 'Guard', path: '/guard' },
         { name: 'Pipe', path: '/pipe' },
         { name: 'Directive', path: '/directive' },
