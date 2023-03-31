@@ -13,7 +13,7 @@ export class ServicePipesComponent extends BaseComponent {
   constructor(public override httpClient: HttpClient) {
     super(
         httpClient,
-        'Observables',
+        'RxJS Pipes',
         [
           {
             location: 'services',
