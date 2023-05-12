@@ -23,8 +23,11 @@ import {ComponentInheritanceComponent} from "./components/component-inheritance/
 const routes: Routes = [
     {
         path: '',
-        redirectTo: '',
-        pathMatch: 'full',
+        redirectTo: 'home',
+        pathMatch: 'full'
+    },
+    {
+        path: 'home',
         component: HomeComponent
     },
     {
