@@ -6,9 +6,9 @@
     "types": []
   },
   "files": [
-    "src/main.ts"
+    "src/angular/main.ts"
   ],
   "include": [
-    "src/**/*.d.ts"
+    "src/angular/**/*.d.ts"
   ]
 }
