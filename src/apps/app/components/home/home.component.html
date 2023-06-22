@@ -1,1 +1,10 @@
-<p>home works!</p>
+<div class="home-container background">
+    <app-nav-top [header]="header" [backgroundColor]="headerBackgroundColor"></app-nav-top>
+    <div class="btn-container">
+        <div class="btn-group">
+            <button *ngFor="let link of links" [routerLink]="[link.path]" class="btn green-btn">
+                {{ link.name }}
+            </button>
+        </div>
+    </div>
+</div>

@@ -18,17 +18,17 @@ export class EagerLoadingComponent extends BaseComponent {
         FileSettings.URL_PATH,
         [
           {
-            location: 'eager-loading/example',
+            location: 'components/eager-loading/example',
             name: 'eager-example-routing.module.ts',
             discriminatorType: 'const'
           },
           {
-            location: 'eager-loading/example',
+            location: 'components/eager-loading/example',
             name: 'eager-example.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'eager-loading/example',
+            location: 'components/eager-loading/example',
             name: 'eager-example.component.html',
             discriminatorType: '<'
           }

@@ -18,12 +18,12 @@ export class TemplateRenderComponent extends BaseComponent {
             FileSettings.URL_PATH,
             [
                 {
-                    location: 'template-render/example',
+                    location: 'components/template-render/example',
                     name: 'template-example.component.ts',
                     discriminatorType: '@Component'
                 },
                 {
-                    location: 'template-render/example',
+                    location: 'components/template-render/example',
                     name: 'template-example.component.html',
                     discriminatorType: '<'
                 }

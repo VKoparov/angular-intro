@@ -18,22 +18,22 @@ export class ParentChildCommunicationComponent extends BaseComponent {
         FileSettings.URL_PATH,
         [
           {
-            location: 'parent-child-communication/example/parent-example',
+            location: 'components/parent-child-communication/example/parent-example',
             name: 'parent-example.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'parent-child-communication/example/parent-example',
+            location: 'components/parent-child-communication/example/parent-example',
             name: 'parent-example.component.html',
             discriminatorType: '<'
           },
           {
-            location: 'parent-child-communication/example/child-example',
+            location: 'components/parent-child-communication/example/child-example',
             name: 'child-example.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'parent-child-communication/example/child-example',
+            location: 'components/parent-child-communication/example/child-example',
             name: 'child-example.component.html',
             discriminatorType: '<'
           }

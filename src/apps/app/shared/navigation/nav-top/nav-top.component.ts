@@ -8,4 +8,6 @@ import {Component, Input} from '@angular/core';
 export class NavTopComponent {
 
   @Input() header!: string;
+
+  @Input() backgroundColor!: string;
 }

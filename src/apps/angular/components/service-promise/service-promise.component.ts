@@ -23,12 +23,12 @@ export class ServicePromiseComponent extends BaseComponent {
             discriminatorType: '@Injectable'
           },
           {
-            location: 'service-promise/example/component',
+            location: 'components/service-promise/example/component',
             name: 'example.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'service-promise/example/component',
+            location: 'components/service-promise/example/component',
             name: 'example.component.html',
             discriminatorType: '<'
           }

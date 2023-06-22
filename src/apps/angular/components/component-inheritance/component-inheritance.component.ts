@@ -18,22 +18,22 @@ export class ComponentInheritanceComponent extends BaseComponent {
         FileSettings.URL_PATH,
         [
           {
-            location: 'component-inheritance/example/component/frame',
+            location: 'components/component-inheritance/example/component/frame',
             name: 'frame.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'component-inheritance/example/component/information-step',
+            location: 'components/component-inheritance/example/component/information-step',
             name: 'information-step.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'component-inheritance/example/component/content-load-step',
+            location: 'components/component-inheritance/example/component/content-load-step',
             name: 'content-load-step.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'component-inheritance/example/model',
+            location: 'components/component-inheritance/example/model',
             name: 'frame-content.ts',
             discriminatorType: ''
           }

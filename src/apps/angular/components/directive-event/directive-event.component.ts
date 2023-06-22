@@ -18,17 +18,17 @@ export class DirectiveEventComponent extends BaseComponent {
         FileSettings.URL_PATH,
         [
           {
-            location: 'directive-event/example/directive',
+            location: 'components/directive-event/example/directive',
             name: 'scroll-event.directive.ts',
             discriminatorType: '@Directive'
           },
           {
-            location: 'directive-event/example/component',
+            location: 'components/directive-event/example/component',
             name: 'directive-example.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'directive-event/example/component',
+            location: 'components/directive-event/example/component',
             name: 'directive-example.component.html',
             discriminatorType: '<'
           }

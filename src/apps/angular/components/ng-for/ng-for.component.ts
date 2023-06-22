@@ -19,12 +19,12 @@ export class NgForComponent extends BaseComponent {
         FileSettings.URL_PATH,
         [
           {
-            location: 'ng-for/example',
+            location: 'components/ng-for/example',
             name: 'ng-for-example.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'ng-for/example',
+            location: 'components/ng-for/example',
             name: 'ng-for-example.component.html',
             discriminatorType: '<'
           }

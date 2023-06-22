@@ -18,12 +18,12 @@ export class PropertyBindingComponent extends BaseComponent {
         FileSettings.URL_PATH,
         [
           {
-            location: 'property-binding/example',
+            location: 'components/property-binding/example',
             name: 'example.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'property-binding/example',
+            location: 'components/property-binding/example',
             name: 'example.component.html',
             discriminatorType: '<'
           }

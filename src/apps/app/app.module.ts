@@ -9,6 +9,7 @@ import {MaterialModule} from "./material.module";
 import {highlightConfig} from "./config/providers-config";
 import {AngularModule} from "../angular/angular.module";
 import { HomeComponent } from './components/home/home.component';
+import {NavigationModule} from "./shared/navigation/navigation.module";
 
 @NgModule({
     declarations: [
@@ -22,7 +23,8 @@ import { HomeComponent } from './components/home/home.component';
         HttpClientModule,
         HighlightModule,
         MaterialModule,
-        AngularModule
+        AngularModule,
+        NavigationModule
     ],
     bootstrap: [
         AppComponent

@@ -23,12 +23,12 @@ export class ServiceObservablesComponent extends BaseComponent {
             discriminatorType: '@Injectable'
           },
           {
-            location: 'service-observables/example/component',
+            location: 'components/service-observables/example/component',
             name: 'example.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'service-observables/example/component',
+            location: 'components/service-observables/example/component',
             name: 'example.component.html',
             discriminatorType: '<'
           }
