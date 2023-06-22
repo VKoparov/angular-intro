@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import { PokemonService } from '../../../../../app/services/pokemon.service';
+import { PokemonService } from '../../../../services/pokemon.service';
 import {map} from "rxjs";
 import {response} from "express";
 

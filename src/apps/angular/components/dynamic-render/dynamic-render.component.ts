@@ -18,17 +18,17 @@ export class DynamicRenderComponent extends BaseComponent {
             FileSettings.URL_PATH,
             [
                 {
-                    location: 'dynamic-render/example/component',
+                    location: 'components/dynamic-render/example/component',
                     name: 'dynamic-example.component.ts',
                     discriminatorType: '@Component'
                 },
                 {
-                    location: 'dynamic-render/example/component',
+                    location: 'components/dynamic-render/example/component',
                     name: 'dynamic-example.component.html',
                     discriminatorType: '<'
                 },
                 {
-                    location: 'dynamic-render/example/directives',
+                    location: 'components/dynamic-render/example/directives',
                     name: 'dynamic-component.directive.ts',
                     discriminatorType: '@Directive'
                 }

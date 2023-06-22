@@ -17,27 +17,27 @@ export class EnvironmentConfigComponent extends BaseComponent {
             FileSettings.URL_PATH,
             [
                 {
-                    location: 'environment-config/example',
+                    location: 'components/environment-config/example',
                     name: 'package.json',
                     discriminatorType: ''
                 },
                 {
-                    location: 'environment-config/example',
+                    location: 'components/environment-config/example',
                     name: 'angular.json',
                     discriminatorType: ''
                 },
                 {
-                    location: 'environment-config/example/environments',
+                    location: 'components/environment-config/example/environments',
                     name: 'environment.ts',
                     discriminatorType: ''
                 },
                 {
-                    location: 'environment-config/example/environments',
+                    location: 'components/environment-config/example/environments',
                     name: 'environment.prod.ts',
                     discriminatorType: ''
                 },
                 {
-                    location: 'environment-config/example/environments',
+                    location: 'components/environment-config/example/environments',
                     name: 'environment.dev.ts',
                     discriminatorType: ''
                 }

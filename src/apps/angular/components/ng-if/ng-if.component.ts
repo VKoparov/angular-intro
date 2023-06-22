@@ -18,12 +18,12 @@ export class NgIfComponent extends BaseComponent {
             FileSettings.URL_PATH,
             [
                 {
-                    location: 'ng-if/example',
+                    location: 'components/ng-if/example',
                     name: 'ng-if-example.component.ts',
                     discriminatorType: '@Component'
                 },
                 {
-                    location: 'ng-if/example',
+                    location: 'components/ng-if/example',
                     name: 'ng-if-example.component.html',
                     discriminatorType: '<'
                 }

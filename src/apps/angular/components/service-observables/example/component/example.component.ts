@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {PokemonService} from "../../../../../app/services/pokemon.service";
+import {PokemonService} from "../../../../services/pokemon.service";
 
 @Component({
   selector: 'app-observables-example',

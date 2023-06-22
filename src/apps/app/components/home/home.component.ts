@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  header: string = 'Front-End Intro';
+
+  headerBackgroundColor: string = 'white';
+
+  links: { name: string, path: string }[] = [
+    { name: 'Angular Tutorials', path: '/angular' },
+    { name: 'Cypress Tutorials', path: '/cypress' }
+  ];
 }

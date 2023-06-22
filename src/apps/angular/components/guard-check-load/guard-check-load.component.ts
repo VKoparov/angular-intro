@@ -18,17 +18,17 @@ export class GuardCheckLoadComponent extends BaseComponent {
             FileSettings.URL_PATH,
             [
                 {
-                    location: 'guard-check-load/example/guard',
+                    location: 'components/guard-check-load/example/guard',
                     name: 'example.guard.ts',
                     discriminatorType: '@Injectable'
                 },
                 {
-                    location: '/guard-check-load/example',
+                    location: 'components/guard-check-load/example',
                     name: 'guard-example-routing.module.ts',
                     discriminatorType: 'const'
                 },
                 {
-                    location: 'guard-check-load/example',
+                    location: 'components/guard-check-load/example',
                     name: 'guard-example.module.ts',
                     discriminatorType: '@NgModule'
                 }

@@ -23,12 +23,12 @@ export class ServicePipesComponent extends BaseComponent {
             discriminatorType: '@Injectable'
           },
           {
-            location: 'service-pipes/example/component',
+            location: 'components/service-pipes/example/component',
             name: 'example.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'service-pipes/example/component',
+            location: 'components/service-pipes/example/component',
             name: 'example.component.html',
             discriminatorType: '<'
           }

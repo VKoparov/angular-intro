@@ -18,17 +18,17 @@ export class PipeTransformerComponent extends BaseComponent {
         FileSettings.URL_PATH,
         [
           {
-            location: 'pipe-transformer/example/pipe',
+            location: 'components/pipe-transformer/example/pipe',
             name: 'format-text.pipe.ts',
             discriminatorType: '@Pipe'
           },
           {
-            location: 'pipe-transformer/example/component',
+            location: 'components/pipe-transformer/example/component',
             name: 'pipe-example.component.ts',
             discriminatorType: '@Component'
           },
           {
-            location: 'pipe-transformer/example/component',
+            location: 'components/pipe-transformer/example/component',
             name: 'pipe-example.component.html',
             discriminatorType: '<'
           }

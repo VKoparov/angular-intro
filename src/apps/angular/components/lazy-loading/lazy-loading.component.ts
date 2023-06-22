@@ -18,27 +18,27 @@ export class LazyLoadingComponent extends BaseComponent {
             FileSettings.URL_PATH,
             [
                 {
-                    location: 'lazy-loading',
+                    location: 'components/lazy-loading',
                     name: 'lazy-loading-routing.module.ts',
                     discriminatorType: 'const'
                 },
                 {
-                    location: 'lazy-loading/example',
+                    location: 'components/lazy-loading/example',
                     name: 'lazy-example-routing.module.ts',
                     discriminatorType: 'const'
                 },
                 {
-                    location: 'lazy-loading/example',
+                    location: 'components/lazy-loading/example',
                     name: 'lazy-example.module.ts',
                     discriminatorType: '@NgModule'
                 },
                 {
-                    location: 'lazy-loading/example',
+                    location: 'components/lazy-loading/example',
                     name: 'lazy-example.component.ts',
                     discriminatorType: '@Component'
                 },
                 {
-                    location: 'lazy-loading/example',
+                    location: 'components/lazy-loading/example',
                     name: 'lazy-example.component.html',
                     discriminatorType: '<'
                 }

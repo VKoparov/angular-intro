@@ -1,8 +1,8 @@
-<div class="home-container">
+<div class="angular-home-container background angular-bcg">
     <app-nav-top [header]="header"></app-nav-top>
     <div class="btn-container">
         <div class="btn-group">
-            <button *ngFor="let link of links" [routerLink]="[link.path]" class="btn">
+            <button *ngFor="let link of links" [routerLink]="[link.path]" class="btn purple-btn">
                 {{ link.name }}
             </button>
         </div>
