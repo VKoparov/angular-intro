@@ -1,6 +1,6 @@
-<div class="nav nav-footer">
-    <div class="action-button">
-        <app-back-button></app-back-button>
+<div class="nav nav-footer" [ngStyle]="{'background' : theme.header.color}">
+    <div class="action-button" (click)="handleBackClick()">
+        <app-action-button></app-action-button>
     </div>
     <div class="action-button" *ngIf="shouldHaveActionButton" (click)="handleClickAction()">
         <app-action-button [buttonText]="actionButtonText"></app-action-button>

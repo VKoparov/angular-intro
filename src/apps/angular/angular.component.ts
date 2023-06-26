@@ -1,14 +1,16 @@
-import {Component, ViewEncapsulation} from '@angular/core';
+import {Component, Inject} from '@angular/core';
+import {Theme, THEME_CONFIG} from "../app/models/theme";
 
 @Component({
-    selector: 'app-home',
+    selector: 'app-angular',
     templateUrl: './angular.component.html',
-    styleUrls: ['./angular.component.css'],
-    encapsulation: ViewEncapsulation.None
+    styleUrls: ['./angular.component.css']
 })
 export class AngularComponent {
 
-    header: string = 'Angular Tutorials';
+    protected theme!: Theme;
+
+    header: string = 'Angular';
 
     links: { name: string, path: string }[] = [
         { name: 'Template Render', path: '/template-render' },
@@ -28,4 +30,10 @@ export class AngularComponent {
         { name: 'Environment', path: '/environment' },
         { name: 'Component Inheritance', path: '/component-inheritance' }
     ];
+
+    constructor(
+        @Inject(THEME_CONFIG) theme: Theme
+    ) {
+        this.theme = theme;
+    }
 }

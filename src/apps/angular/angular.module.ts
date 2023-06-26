@@ -1,11 +1,9 @@
-import {NgModule} from '@angular/core';
+import {Inject, NgModule} from '@angular/core';
 import {AngularComponent} from './angular.component';
 import {TemplateRenderModule} from "./components/template-render/template-render.module";
 import {DynamicRenderModule} from "./components/dynamic-render/dynamic-render.module";
 import {LazyLoadingModule} from "./components/lazy-loading/lazy-loading.module";
 import {EagerLoadingModule} from "./components/eager-loading/eager-loading.module";
-import {NgIfModule} from "./components/ng-if/ng-if.module";
-import {NgForModule} from "./components/ng-for/ng-for.module";
 import {ParentChildCommunicationModule} from "./components/parent-child-communication/parent-child-communication.module";
 import {GuardCheckLoadModule} from "./components/guard-check-load/guard-check-load.module";
 import {GuardExampleModule} from "./components/guard-check-load/example/guard-example.module";
@@ -19,9 +17,13 @@ import {EnvironmentConfigModule} from "./components/environment-config/environme
 import {ComponentInheritanceModule} from "./components/component-inheritance/component-inheritance.module";
 import {AngularRoutingModule} from "./angular-routing.module";
 import {NavigationModule} from "../app/shared/navigation/navigation.module";
-import {CommonModule, NgForOf} from "@angular/common";
+import {CommonModule} from "@angular/common";
 import {BaseModule} from "../app/common/base/base.module";
-import {RouterLink} from "@angular/router";
+import {NgIfModule} from "./components/ng-if/ng-if.module";
+import {NgForModule} from "./components/ng-for/ng-for.module";
+import {Theme, THEME_CONFIG} from "../app/models/theme";
+import {ANGULAR_THEME} from "./theme/angular-theme";
+import {ButtonsModule} from "../app/shared/buttons/buttons.module";
 
 @NgModule({
     declarations: [
@@ -36,6 +38,8 @@ import {RouterLink} from "@angular/router";
         DynamicRenderModule,
         EagerLoadingModule,
         LazyLoadingModule,
+        NgIfModule,
+        NgForModule,
         ParentChildCommunicationModule,
         GuardCheckLoadModule,
         GuardExampleModule,
@@ -47,6 +51,9 @@ import {RouterLink} from "@angular/router";
         PropertyBindingModule,
         EnvironmentConfigModule,
         ComponentInheritanceModule
+    ],
+    providers: [
+        { provide: THEME_CONFIG, useValue: ANGULAR_THEME }
     ]
 })
 export class AngularModule {}

@@ -5,14 +5,23 @@ import {HomeComponent} from "./components/home/home.component";
 const routes: Routes = [
     {
         path: '',
-        redirectTo: '',
+        redirectTo: 'home',
         pathMatch: 'full',
-        component: HomeComponent
+    },
+    {
+        path: 'home',
+        loadChildren: () => import('./components/home/home.module')
+            .then((m) => m.HomeModule)
     },
     {
         path: 'angular',
         loadChildren: () => import('../angular/angular.module')
             .then((m) => m.AngularModule)
+    },
+    {
+        path: 'cypress',
+        loadChildren: () => import('../cypress/cypress.module')
+            .then((m) => m.CypressModule)
     }
 ];
 

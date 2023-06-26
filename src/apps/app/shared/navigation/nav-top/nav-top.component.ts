@@ -1,4 +1,5 @@
-import {Component, Input} from '@angular/core';
+import {Component, Inject, Input} from '@angular/core';
+import {Theme, THEME_CONFIG} from "../../../models/theme";
 
 @Component({
   selector: 'app-nav-top',
@@ -9,5 +10,11 @@ export class NavTopComponent {
 
   @Input() header!: string;
 
-  @Input() backgroundColor!: string;
+  protected theme!: Theme;
+
+  constructor(
+      @Inject(THEME_CONFIG) theme: Theme
+  ) {
+    this.theme = theme;
+  }
 }

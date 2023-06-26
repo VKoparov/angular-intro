@@ -6,7 +6,7 @@ import {FileSettings} from "../../const/files-settings";
 
 @Component({
     selector: 'app-ng-if',
-    templateUrl: './ng-if.component.html',
+    templateUrl: '../../../app/common/base/base.component.html',
     styleUrls: ['./ng-if.component.css']
 })
 export class NgIfComponent extends BaseComponent {

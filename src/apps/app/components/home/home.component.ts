@@ -1,4 +1,5 @@
-import {Component, Input} from '@angular/core';
+import {Component, Inject} from '@angular/core';
+import {Theme, THEME_CONFIG} from "../../models/theme";
 
 @Component({
   selector: 'app-home',
@@ -7,12 +8,18 @@ import {Component, Input} from '@angular/core';
 })
 export class HomeComponent {
 
-  header: string = 'Front-End Intro';
+  protected theme!: Theme;
 
-  headerBackgroundColor: string = 'white';
+  header: string = 'Front-End Tutorials';
 
   links: { name: string, path: string }[] = [
-    { name: 'Angular Tutorials', path: '/angular' },
-    { name: 'Cypress Tutorials', path: '/cypress' }
+    { name: 'Angular', path: '/angular' },
+    { name: 'Cypress', path: '/cypress' }
   ];
+
+  constructor(
+      @Inject(THEME_CONFIG) theme: Theme
+  ) {
+    this.theme = theme;
+  }
 }
