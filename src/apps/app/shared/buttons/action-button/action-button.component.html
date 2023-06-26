@@ -1,3 +1,12 @@
-<button class="btn purple-btn">
+<button *ngIf="buttonText"
+        class="btn"
+        [ngStyle]="{
+        '--action-btn-box-shadow' : theme.button.boxShadow,
+        'background-image' : theme.button.color,
+        'color' : theme.button.textColor,
+        'border' : theme.button.border,
+        'opacity' : theme.button.opacity
+        }"
+>
     {{ buttonText }}
 </button>

@@ -1,0 +1,21 @@
+.content {
+    height: 240px;
+
+    display: grid;
+    gap: 20px;
+
+    padding: 20px;
+}
+
+.header {
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    text-align: justify;
+}
+
+.btn {
+    margin: auto;
+}

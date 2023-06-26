@@ -10,11 +10,13 @@ import {highlightConfig} from "./config/providers-config";
 import {AngularModule} from "../angular/angular.module";
 import { HomeComponent } from './components/home/home.component';
 import {NavigationModule} from "./shared/navigation/navigation.module";
+import {THEME_CONFIG} from "./models/theme";
+import {HOME_THEME} from "./themes/home-theme";
+import {HomeModule} from "./components/home/home.module";
 
 @NgModule({
     declarations: [
-        AppComponent,
-        HomeComponent
+        AppComponent
     ],
     imports: [
         BrowserModule,
@@ -22,9 +24,9 @@ import {NavigationModule} from "./shared/navigation/navigation.module";
         AppRoutingModule,
         HttpClientModule,
         HighlightModule,
-        MaterialModule,
+        HomeModule,
         AngularModule,
-        NavigationModule
+        MaterialModule
     ],
     bootstrap: [
         AppComponent
@@ -33,5 +35,4 @@ import {NavigationModule} from "./shared/navigation/navigation.module";
         highlightConfig
     ]
 })
-export class AppModule {
-}
+export class AppModule {}

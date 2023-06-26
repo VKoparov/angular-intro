@@ -1,8 +1,19 @@
-<div class="home-container background">
-    <app-nav-top [header]="header" [backgroundColor]="headerBackgroundColor"></app-nav-top>
+<div class="home-container background"
+     [ngStyle]="{
+     'background-image' : theme.background
+     }">
+    <app-nav-top [header]="header"></app-nav-top>
     <div class="btn-container">
         <div class="btn-group">
-            <button *ngFor="let link of links" [routerLink]="[link.path]" class="btn green-btn">
+            <button class="btn"
+                    *ngFor="let link of links"
+                    [routerLink]="[link.path]"
+                    [ngStyle]="{
+                    '--action-btn-box-shadow' : theme.button.boxShadow,
+                    'color' : theme.button.textColor,
+                    'opacity' : theme.button.opacity,
+                    'border' : theme.button.border
+                    }">
                 {{ link.name }}
             </button>
         </div>
