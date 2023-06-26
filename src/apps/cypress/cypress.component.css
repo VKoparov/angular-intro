@@ -6,6 +6,104 @@
     justify-content: center;
 }
 
-.cypress-home-container, .template-container {
-    background-image: url(/assets/cypress-background.jpg);
+.btn-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 40px;
+
+    margin: 20px 30px auto 30px;
+
+    overflow: auto;
+}
+
+.btn-group {
+    width: fit-content;
+
+    display: grid;
+    gap: 20px;
+
+    border: dashed darkslategrey 5px;
+    border-radius: 8px;
+
+    margin: auto;
+    padding: 20px;
+}
+
+.group-header {
+    color: darkslategrey;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    text-align: start;
+}
+
+.items-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+
+    margin: auto;
+
+    height: 200px;
+
+    overflow: auto;
+}
+
+.btn {
+    width: 150px;
+    min-width: 0;
+
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+
+    padding: 25px 1rem;
+
+    transition: all .5s;
+}
+
+.btn:hover {
+    box-shadow: var(--action-btn-box-shadow);
+
+    transition-duration: .1s;
+}
+
+.btn-group::-webkit-scrollbar {
+    display: none;
+}
+
+.btn-container::-webkit-scrollbar {
+    display: none;
+}
+
+.items-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 60em) {
+
+    .btn-container {
+        grid-template-columns: auto;
+
+        margin: 20px;
+    }
+
+    .items-container {
+        grid-template-columns: auto auto;
+    }
+
+    .btn {
+        width: fit-content;
+    }
 }

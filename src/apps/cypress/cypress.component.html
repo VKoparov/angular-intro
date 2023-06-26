@@ -1,10 +1,25 @@
-<div class="cypress-home-container background">
+<div class="cypress-home-container background"
+     [ngStyle]="{
+     'background-image' : theme.background
+     }">
     <app-nav-top [header]="header"></app-nav-top>
     <div class="btn-container">
-        <div class="btn-group">
-            <button *ngFor="let link of links" [routerLink]="[link.path]" class="btn purple-btn">
-                {{ link.name }}
-            </button>
+        <div class="btn-group" *ngFor="let group of groups">
+            <div class="group-header">{{ group.name }}</div>
+            <div class="items-container">
+                <button class="btn"
+                        *ngFor="let item of group.items"
+                        [routerLink]="[item.path]"
+                        [ngStyle]="{
+                    '--action-btn-box-shadow' : theme.button.boxShadow,
+                    'background' : theme.button.color,
+                    'color' : theme.button.textColor,
+                    'opacity' : theme.button.opacity,
+                    'border' : theme.button.border
+                    }">
+                    {{ item.name }}
+                </button>
+            </div>
         </div>
     </div>
     <app-nav-footer></app-nav-footer>
