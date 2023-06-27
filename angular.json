@@ -24,7 +24,8 @@
               "src/apps/favicon.ico",
               "src/apps/assets",
               "src/apps/app",
-              "src/apps/angular"
+              "src/apps/angular",
+              "src/apps/cypress"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",

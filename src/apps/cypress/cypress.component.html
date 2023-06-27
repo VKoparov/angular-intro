@@ -9,7 +9,7 @@
             <div class="items-container">
                 <button class="btn"
                         *ngFor="let item of group.items"
-                        [routerLink]="[item.path]"
+                        [routerLink]="[item.name]"
                         [ngStyle]="{
                     '--action-btn-box-shadow' : theme.button.boxShadow,
                     'background' : theme.button.color,

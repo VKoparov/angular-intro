@@ -8,31 +8,35 @@
 
 .btn-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
     gap: 40px;
 
-    margin: 20px 30px auto 30px;
+    margin: auto 30px;
+    padding: 20px;
 
     overflow: auto;
 }
 
 .btn-group {
-    width: fit-content;
+    height: 230px;
 
     display: grid;
     gap: 20px;
 
-    border: dashed darkslategrey 5px;
-    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
 
-    margin: auto;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+
     padding: 20px;
 }
 
 .group-header {
-    color: darkslategrey;
+    color: slategrey;
 
-    font-size: 30px;
+    font-size: 22px;
     font-weight: bold;
 
     text-align: start;
@@ -43,16 +47,16 @@
     grid-template-columns: auto auto auto;
     gap: 20px;
 
-    margin: auto;
+    height: 150px;
 
-    height: 200px;
+    padding: 15px;
 
     overflow: auto;
 }
 
 .btn {
-    width: 150px;
     min-width: 0;
+    max-height: 70px;
 
     border-radius: 8px;
     border-style: none;
@@ -77,6 +81,8 @@
     box-shadow: var(--action-btn-box-shadow);
 
     transition-duration: .1s;
+
+    z-index: 999;
 }
 
 .btn-group::-webkit-scrollbar {
@@ -95,15 +101,9 @@
 
     .btn-container {
         grid-template-columns: auto;
-
-        margin: 20px;
     }
 
     .items-container {
         grid-template-columns: auto auto;
-    }
-
-    .btn {
-        width: fit-content;
     }
 }
