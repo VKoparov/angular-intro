@@ -1,5 +1,6 @@
-import {Component, Input} from '@angular/core';
+import {Component, Inject, Input} from '@angular/core';
 import {SourceCode} from "../../../models/source-code";
+import {Theme, THEME_CONFIG} from "../../../models/theme";
 
 @Component({
   selector: 'app-source-code-view-modal',
@@ -9,4 +10,12 @@ import {SourceCode} from "../../../models/source-code";
 export class SourceCodeViewModalComponent {
 
   @Input() data!: SourceCode[];
+
+  protected theme!: Theme;
+
+  constructor(
+      @Inject(THEME_CONFIG) theme: Theme
+  ) {
+    this.theme = theme;
+  }
 }
