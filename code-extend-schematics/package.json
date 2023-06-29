@@ -1,5 +1,5 @@
 {
-  "name": "code-extend-schematics",
+  "name": "@schema/code-extend-schematics",
   "version": "0.0.1",
   "description": "A schematic for generating artifacts, with code extension.",
   "scripts": {
@@ -24,7 +24,7 @@
     "rxjs": "~7.8.0"
   },
   "devDependencies": {
-    "@types/node": "^14.0.0",
+    "@types/node": "^16.11.7",
     "@types/jasmine": "~4.3.0",
     "jasmine": "^4.0.0"
   }
