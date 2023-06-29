@@ -46,6 +46,6 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.9.4",
     "cypress": "latest",
-    "code-extend-schematics": "file:code-extend-schematics"
+    "code-extend-schematics": "0.0.1"
   }
 }

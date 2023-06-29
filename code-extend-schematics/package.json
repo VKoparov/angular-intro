@@ -1,5 +1,5 @@
 {
-  "name": "@schema/code-extend-schematics",
+  "name": "code-extend-schematics",
   "version": "0.0.1",
   "description": "A schematic for generating artifacts, with code extension.",
   "scripts": {
