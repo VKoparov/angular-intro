@@ -141,7 +141,8 @@
   "cli": {
     "schematicCollections": [
       "@cypress/schematic",
-      "@schematics/angular"
+      "@schematics/angular",
+      "code-extend-schematics"
     ]
   }
 }
