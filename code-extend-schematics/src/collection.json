@@ -1,0 +1,29 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "extends": [
+    "@schematics/angular"
+  ],
+  "schematics": {
+    "ng-add": {
+      "description": "Add schematics to the project.",
+      "factory": "./ng-add/index#ngAdd",
+      "schema": "./ng-add/schema.json"
+    },
+    "code-c": {
+      "aliases": [
+        "co"
+      ],
+      "description": "A schematic for generating component, with source file serve extension.",
+      "factory": "./code-component/index#codeComponent",
+      "schema": "./code-component/schema.json"
+    },
+    "code-m": {
+      "aliases": [
+        "mo"
+      ],
+      "description": "A schematic for generating module, with source file serve extension.",
+      "factory": "./code-module/index#codeModule",
+      "schema": "./code-module/schema.json"
+    }
+  }
+}

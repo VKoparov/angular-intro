@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "$id": "CodeSourceServeSchematicsNgAdd",
+  "title": "Custom library for extending Angular Schematics",
+  "type": "object",
+  "properties": {
+    "defaultCollection": {
+      "type": "boolean",
+      "default": true,
+      "description": "Use code-source-serve-schematics as the default collection",
+      "x-prompt": "Do you want to use code-source-serve-schematics as the default collection?",
+      "alias": "d"
+    }
+  },
+  "required": []
+}

@@ -1,0 +1,31 @@
+{
+  "name": "code-extend-schematics",
+  "version": "0.0.1",
+  "description": "A schematic for generating artifacts, with code extension.",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json --watch",
+    "test": "npm run build && jasmine src/**/*_spec.js"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "ng-add": {
+    "save": "devDependencies"
+  },
+  "author": "",
+  "license": "MIT",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^16.1.1",
+    "@angular-devkit/schematics": "^16.1.1",
+    "@schematics/angular": "^16.1.1",
+    "typescript": "~5.1.3",
+    "rxjs": "~7.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@types/jasmine": "~4.3.0",
+    "jasmine": "^4.0.0"
+  }
+}
