@@ -28,7 +28,6 @@ FROM node:14-alpine
 WORKDIR /app
 
 # Copy the package.json and package-lock.json files to the container
-COPY ./code-extend-schematics/package*.json ./
 COPY package*.json ./
 
 # Install dependencies
